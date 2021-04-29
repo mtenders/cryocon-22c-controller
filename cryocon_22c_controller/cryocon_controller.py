@@ -95,8 +95,7 @@ class CryoconController( scpi.Instrument ):
             port = port, 
             timeout = timeout* 1000, 
             read_termination = '\r\n', 
-            write_termination = '\r\n', 
-            backend = '@py' 
+            write_termination = '\r\n'
         )
     
         self.__channels = {}
